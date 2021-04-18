@@ -64,7 +64,7 @@ def iniciar_menu(opcoes):
         # Inibe a interrupção do programa caso o usuário digite um valor inconversível para int.
         except ValueError:
             opcao = -1
-        if opcao in range(+1, len(opcoes)):
+        if opcao in range(len(opcoes)):
             return opcao
         else:
             texto_input = "Opção inválida.\nPor favor, escolha uma das opções: "
