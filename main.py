@@ -12,14 +12,6 @@ Isso foi necessário devido ao funcionamento da função ``randint()`` da biblio
 
 A documentação formatada com Sphinx pode ser encontrada em <http://forcaascii.rtfd.io/>, que é feito com base no nosso reposítório do Github <https://github.com/adamesalles/forcaASCII>.
 
-Instruções de jogo:
-
-1. Tenha Python instalado na sua máquina. Nós utilizamos a versão 3.8.8 para desenvolver.
-2. Certifique-se que os arquivos ``main.py``, ``modulo_grafico.py`` e ``palavras_temas.txt`` no mesmo diretório.
-3. Execute o arquivo ``main.py``. No Linux (nossa plataforma de desenvolvimento), ``python3 main.py``. No Windows, ``py .\main.py``.
-4. Se divirta!
-
-Obs: se quiser adicionar palavras, não há limitação quando à açentuação ou hifenização/espaçamento em nosso software. No entanto, coloque em cada linha uma palavra e sua respectiva dica no formato "palavra;dica".
 """
 
 # Professor, tá cheio de firula. Seja generoso conosco, por favor.
