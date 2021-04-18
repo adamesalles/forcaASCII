@@ -4,22 +4,30 @@ Jogo da Forca ASCII
 
 Módulo lógico feito por Ana Carolina Erthal, Eduardo Adame, Murilo Calegari, Rodrigo Pintucci, Tiago Barradas e Vinicius Hedler. 
 
-Módulo gráfico feito por Juan, Lucas, Yasmin, Nicole e Carlos.
+Módulo gráfico entregue por Juan, Lucas, Yasmin, Nicole e Carlos.
 
 Utilizamos a função ``randbelow()`` da biblioteca padrão do python secrets para randomizar a palavra escolhida. <https://docs.python.org/3/library/secrets>
 
 Isso foi necessário devido ao funcionamento da função ``randint()`` da biblioteca random não manter uma aleatoriedade 100% real.
 
+A documentação formatada com Sphinx pode ser encontrada em <http://forcaascii.rtfd.io/>, que é feito com base no nosso reposítório do Github <https://github.com/adamesalles/forcaASCII>.
 
+Instruções de jogo:
 
+1. Tenha Python instalado na sua máquina. Nós utilizamos a versão 3.8.8 para desenvolver.
+2. Certifique-se que os arquivos ``main.py``, ``modulo_grafico.py`` e ``palavras_temas.txt`` no mesmo diretório.
+3. Execute o arquivo ``main.py``. No Linux (nossa plataforma de desenvolvimento), ``python3 main.py``. No Windows, ``py .\main.py``.
+4. Se divirta!
+
+Obs: se quiser adicionar palavras, não há limitação quando à açentuação ou hifenização/espaçamento em nosso software. No entanto, coloque em cada linha uma palavra e sua respectiva dica no formato "palavra;dica".
 """
 
-# Professor, tá cheio de firula, seja generoso conosco por favor.
+# Professor, tá cheio de firula. Seja generoso conosco, por favor.
 
 # alternativa 'mais aleatória' ao random.randint(). A biioteca secrets é padrão do python: https://docs.python.org/3/library/secrets.html
 from secrets import randbelow
 
-# importando módulo gráfico como mg.
+# importando módulo gráfico como mg. Logo, to
 import modulo_grafico as mg
 
 
@@ -90,6 +98,7 @@ def set_lista_palavras():
     for linha in arquivo_palavras:
         lista_palavras.append(linha.rstrip("\n"))
     n = 0
+    # criação de lista de listas
     for linha in lista_palavras:
         lista_palavras[n] = linha.split(";")
         n += 1
@@ -210,13 +219,13 @@ def atualizar_palavra_jogador(palavra_objetivo, letras_inseridas):
     :param str palavra_objetivo: palavra a ser adivinhada pelo jogador.
     :param list letras_inseridas: lista das letras já inseridas pelo jogador.
 
-    :return: palavra objetivo, porém apenas com as letras contidas em letras_inseridas. Os espaços com letras faltantes são preenchidos por '_'.
+    :return: palavra_objetivo, porém apenas com as letras contidas em letras_inseridas. Os espaços com letras faltantes são preenchidos por '_'.
     :rtype: str
     """
     palavra_jogador = ""
     for letra in palavra_objetivo:
         sem_acento = remover_acento(letra)
-        if letra == "-":
+        if letra == "-" or letra == " ":  # Aceita hífen ou espaço
             palavra_jogador += letra
         elif sem_acento in letras_inseridas:
             palavra_jogador += letra
@@ -241,7 +250,7 @@ def loop_jogo(palavra_objetivo, dica_objetivo, dica):
 
     :param bool dica: booleano que informa se o modo de jogo é com dica.
 
-    :return: ``True`` caso em caso de vitória, ``False`` em caso de derrota (do usuário).
+    :return: ``True`` em caso de vitória, ``False`` em caso de derrota (do usuário).
     :rtype: bool
     """
     vidas = 6

@@ -54,3 +54,17 @@ universitária;carol
 sorvete;comida
 borracha;objeto
 japão;país
+rafa;tio
+esperanto;idioma
+polonês;idioma
+amarelo;cor
+attack on titan;anime
+one punch man;anime
+neon genesis evangelion;anime
+dragon ball z;anime
+naruto;anime
+pokémon;anime
+death note;anime
+zenão de cítio;filósofo
+marco aurélio;filósofo
+epiteto;filósofo
