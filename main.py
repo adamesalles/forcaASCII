@@ -56,14 +56,15 @@ def iniciar_menu(opcoes):
     """
     str_opcoes = list_to_str(opcoes)
     texto_input = "Qual opção você deseja? "
-    print(str_opcoes)
     while True:
+        mg.limpa_tela()
+        print(str_opcoes)
         try:
             opcao = int(input(texto_input))
         # Inibe a interrupção do programa caso o usuário digite um valor inconversível para int.
         except ValueError:
             opcao = -1
-        if opcao in range(len(opcoes)):
+        if opcao in range(+1, len(opcoes)):
             return opcao
         else:
             texto_input = "Opção inválida.\nPor favor, escolha uma das opções: "
@@ -85,7 +86,8 @@ def set_lista_palavras():
     :rtype: str
 
     """
-    arquivo_palavras = open("palavras_temas.txt", "r")
+    arquivo_palavras = open("palavras_temas.txt", "r",
+                            encoding="utf-8")  # utf8
     lista_palavras = []
     for linha in arquivo_palavras:
         lista_palavras.append(linha.rstrip("\n"))

@@ -21,6 +21,8 @@ Instruções de jogo:
 
 Obs: se quiser adicionar palavras, não há limitação quando à açentuação ou hifenização/espaçamento em nosso software. No entanto, coloque em cada linha uma palavra e sua respectiva dica no formato "palavra;dica".
 
+Também é importante ressaltar que as funções que limpam o terminal foram definidas e criadas pelo módulo gráfico, que não é de nossa autoria. Neste caso, nós percebemos que os comandos por eles utilizados para limpar o terminal não têm total compatibilidade com o Windows.
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:

@@ -164,8 +164,17 @@
             
   <div class="section" id="seja-bem-vindo-a-documentacao-de-forca-ascii">
 <h1>Seja bem-vindo a documentação de Forca_ASCII!<a class="headerlink" href="#seja-bem-vindo-a-documentacao-de-forca-ascii" title="Link permanente para este título">¶</a></h1>
-<p>Contribuidores: Ana Carolina Erthal Fernandes, Eduardo Adame Salles, Murilo Calegari de Souza, Tiago Barradas Figueiredo, Rodrigo Gomes Hutz Pintucci e Vinícius Hedler</p>
-<p>Repositório: <a class="reference external" href="https://github.com/adamesalles/graficoforcaASCII">https://github.com/adamesalles/graficoforcaASCII</a></p>
+<p>Desenvolvedores: Ana Carolina Erthal Fernandes, Eduardo Adame Salles, Murilo Calegari de Souza, Tiago Barradas Figueiredo, Rodrigo Gomes Hutz Pintucci e Vinícius Hedler</p>
+<p>Repositório: <a class="reference external" href="https://github.com/adamesalles/forcaASCII">https://github.com/adamesalles/forcaASCII</a></p>
+<p>Instruções de jogo:</p>
+<ol class="arabic simple">
+<li><p>Tenha Python instalado na sua máquina. Nós utilizamos a versão 3.8.8 para desenvolver.</p></li>
+<li><p>Certifique-se que os arquivos <code class="docutils literal notranslate"><span class="pre">main.py</span></code>, <code class="docutils literal notranslate"><span class="pre">modulo_grafico.py</span></code> e <code class="docutils literal notranslate"><span class="pre">palavras_temas.txt</span></code> no mesmo diretório.</p></li>
+<li><p>Execute o arquivo <code class="docutils literal notranslate"><span class="pre">main.py</span></code>. No Linux (nossa plataforma de desenvolvimento), <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">main.py</span></code>. No Windows, <code class="docutils literal notranslate"><span class="pre">py</span> <span class="pre">.\main.py</span></code>.</p></li>
+<li><p>Se divirta!</p></li>
+</ol>
+<p>Obs: se quiser adicionar palavras, não há limitação quando à açentuação ou hifenização/espaçamento em nosso software. No entanto, coloque em cada linha uma palavra e sua respectiva dica no formato “palavra;dica”.</p>
+<p>Também é importante ressaltar que as funções que limpam o terminal foram definidas e criadas pelo módulo gráfico, que não é de nossa autoria. Neste caso, nós percebemos que os comandos por eles utilizados para limpar o terminal não têm total compatibilidade com o Windows.</p>
 <div class="toctree-wrapper compound">
 </div>
 </div>
@@ -185,14 +194,6 @@
 <p>Utilizamos a função <code class="docutils literal notranslate"><span class="pre">randbelow()</span></code> da biblioteca padrão do python secrets para randomizar a palavra escolhida. &lt;<a class="reference external" href="https://docs.python.org/3/library/secrets">https://docs.python.org/3/library/secrets</a>&gt;</p>
 <p>Isso foi necessário devido ao funcionamento da função <code class="docutils literal notranslate"><span class="pre">randint()</span></code> da biblioteca random não manter uma aleatoriedade 100% real.</p>
 <p>A documentação formatada com Sphinx pode ser encontrada em &lt;<a class="reference external" href="http://forcaascii.rtfd.io/">http://forcaascii.rtfd.io/</a>&gt;, que é feito com base no nosso reposítório do Github &lt;<a class="reference external" href="https://github.com/adamesalles/forcaASCII">https://github.com/adamesalles/forcaASCII</a>&gt;.</p>
-<p>Instruções de jogo:</p>
-<ol class="arabic simple">
-<li><p>Tenha Python instalado na sua máquina. Nós utilizamos a versão 3.8.8 para desenvolver.</p></li>
-<li><p>Certifique-se que os arquivos <code class="docutils literal notranslate"><span class="pre">main.py</span></code>, <code class="docutils literal notranslate"><span class="pre">modulo_grafico.py</span></code> e <code class="docutils literal notranslate"><span class="pre">palavras_temas.txt</span></code> no mesmo diretório.</p></li>
-<li><p>Execute o arquivo <code class="docutils literal notranslate"><span class="pre">main.py</span></code>. No Linux (nossa plataforma de desenvolvimento), <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">main.py</span></code>. No Windows, <code class="docutils literal notranslate"><span class="pre">py</span> <span class="pre">.\main.py</span></code>.</p></li>
-<li><p>Se divirta!</p></li>
-</ol>
-<p>Obs: se quiser adicionar palavras, não há limitação quando à açentuação ou hifenização/espaçamento em nosso software. No entanto, coloque em cada linha uma palavra e sua respectiva dica no formato “palavra;dica”.</p>
 <dl class="py function">
 <dt id="main.atualizar_palavra_jogador">
 <code class="sig-prename descclassname"><span class="pre">main.</span></code><code class="sig-name descname"><span class="pre">atualizar_palavra_jogador</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">palavra_objetivo</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">letras_inseridas</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#main.atualizar_palavra_jogador" title="Link permanente para esta definição">¶</a></dt>
@@ -419,14 +420,6 @@ Ex:
 
 <span class="sd">A documentação formatada com Sphinx pode ser encontrada em &lt;http://forcaascii.rtfd.io/&gt;, que é feito com base no nosso reposítório do Github &lt;https://github.com/adamesalles/forcaASCII&gt;.</span>
 
-<span class="sd">Instruções de jogo:</span>
-
-<span class="sd">1. Tenha Python instalado na sua máquina. Nós utilizamos a versão 3.8.8 para desenvolver.</span>
-<span class="sd">2. Certifique-se que os arquivos ``main.py``, ``modulo_grafico.py`` e ``palavras_temas.txt`` no mesmo diretório.</span>
-<span class="sd">3. Execute o arquivo ``main.py``. No Linux (nossa plataforma de desenvolvimento), ``python3 main.py``. No Windows, ``py .\main.py``.</span>
-<span class="sd">4. Se divirta!</span>
-
-<span class="sd">Obs: se quiser adicionar palavras, não há limitação quando à açentuação ou hifenização/espaçamento em nosso software. No entanto, coloque em cada linha uma palavra e sua respectiva dica no formato &quot;palavra;dica&quot;.</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
 <span class="c1"># Professor, tá cheio de firula. Seja generoso conosco, por favor.</span>
@@ -471,14 +464,15 @@ Ex:
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">str_opcoes</span> <span class="o">=</span> <span class="n">list_to_str</span><span class="p">(</span><span class="n">opcoes</span><span class="p">)</span>
     <span class="n">texto_input</span> <span class="o">=</span> <span class="s2">&quot;Qual opção você deseja? &quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">str_opcoes</span><span class="p">)</span>
     <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">mg</span><span class="o">.</span><span class="n">limpa_tela</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">str_opcoes</span><span class="p">)</span>
         <span class="k">try</span><span class="p">:</span>
             <span class="n">opcao</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="n">texto_input</span><span class="p">))</span>
         <span class="c1"># Inibe a interrupção do programa caso o usuário digite um valor inconversível para int.</span>
         <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
             <span class="n">opcao</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
-        <span class="k">if</span> <span class="n">opcao</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">opcoes</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">opcao</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">opcoes</span><span class="p">)):</span>
             <span class="k">return</span> <span class="n">opcao</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">texto_input</span> <span class="o">=</span> <span class="s2">&quot;Opção inválida.</span><span class="se">\n</span><span class="s2">Por favor, escolha uma das opções: &quot;</span>
@@ -500,7 +494,8 @@ Ex:
 <span class="sd">    :rtype: str</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">arquivo_palavras</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;palavras_temas.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
+    <span class="n">arquivo_palavras</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;palavras_temas.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">,</span>
+                            <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>  <span class="c1"># utf8</span>
     <span class="n">lista_palavras</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">linha</span> <span class="ow">in</span> <span class="n">arquivo_palavras</span><span class="p">:</span>
         <span class="n">lista_palavras</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">linha</span><span class="o">.</span><span class="n">rstrip</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">))</span>
